@@ -1,12 +1,89 @@
 .Main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 3fr;
     background-color: var(--backgroud-principal-hover);
-    height: 311px;
+    height: 280px;
+    border-radius: var(--border-radius-global);
+    padding: 1rem;
+    grid-gap: 1rem;
+    justify-items: center;
+}
+
+.mainChildImage {
+    display: flex;
+    align-items: center;
+    height: 280px;
+    
+}
+
+
+
+.mainChildImage img {
     border-radius: var(--border-radius-global);
 }
 
 .mainChild {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    
 }
+
+.child {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+
+.text h1 {
+    font: var(--font-family-var);
+    color: var(--color-heading);
+    margin: 18px 0 0 0;
+}
+
+.text h2 {
+    font: var(--font-family-secondary);
+    color: var(--color-text);
+    margin: 0 ;
+}
+
+.childChidl {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.childChidl div a {
+    font: var(--font-family-secondarys);
+    color: var(--color-text);
+    text-decoration: none;
+    margin-left: .7rem;
+}
+
+
+.description {
+    font: var(--font-family-secondary);
+    color: var(--color-text);
+}
+
+@media  screen and (max-width: 900px) {
+    .Main {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .mainChildImage {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .child {
+        grid-template-columns: 1fr;
+    }
+}
+    
+
+

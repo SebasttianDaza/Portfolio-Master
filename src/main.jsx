@@ -2,8 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 
+//Firebase 
+import firebaseConfig from './firebase-config';
+
+import {
+  FirebaseAppProvider
+} from "reactfire";
+
 //Import the components we will need
 import Profile from './Components/Profile/profile';
+
+
+
 
 
 class Main extends React.Component {
@@ -25,6 +35,8 @@ class Main extends React.Component {
 
 
 ReactDOM.render(
-  <Main />,
-  document.getElementById('root')
-)
+  <FirebaseAppProvider firebaseConfig={firebaseConfig}>
+    <Main />
+  </FirebaseAppProvider>,
+  document.getElementById("root")
+);
