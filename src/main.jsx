@@ -11,12 +11,12 @@ import {
 
 //Import the components we will need
 import Profile from './Components/Profile/profile';
+import Main from './Components/Main/main';
 
 
 
 
-
-class Main extends React.Component {
+class Content extends React.Component {
   constructor(props) {
     super(props);
     
@@ -27,6 +27,7 @@ class Main extends React.Component {
     return (
       <React.StrictMode>
         <Profile></Profile>
+        <Main></Main>
       </React.StrictMode>
     );
   }
@@ -36,7 +37,7 @@ class Main extends React.Component {
 
 ReactDOM.render(
   <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-    <Main />
+    <Content />
   </FirebaseAppProvider>,
   document.getElementById("root")
 );

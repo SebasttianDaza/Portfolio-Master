@@ -3,7 +3,7 @@ import "./profile.css";
 
 const Profile = () => {
     return (
-      <main className="Main">
+      <nav className="Main">
         <section className="mainChildImage">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/ImageProfile.jpg?alt=media&token=3078fb60-bbda-4ffe-b393-9414dd0461f9"
@@ -38,7 +38,7 @@ const Profile = () => {
             </p>
           </section>
         </section>
-      </main>
+      </nav>
     );
 }
 
