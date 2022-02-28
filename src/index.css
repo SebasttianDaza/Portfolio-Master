@@ -7,6 +7,9 @@
   --font-family-var: normal 600 24px/29px var(--font-family-principal);
   --color-heading: #4F4F4F;
   --color-text: #828282;
+  
+  --color-text-second: #E0E0E0;
+  --color-text-third: #333333;
   --color-backgroud: #2F80ED;
   --font-family-secondary: normal 500 18px/22px var(--font-family-principal);
   --font-family-secondarys: normal 500 12px/24px var(--font-family-principal);

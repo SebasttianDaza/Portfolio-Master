@@ -1,0 +1,71 @@
+.Article {
+    background-color: var(--backgroud-principal-hover);
+    border-radius: var(--border-radius-global);
+    padding: 1rem;
+    margin: 0;
+    max-height: 656px;
+    min-height: 600px;
+}
+
+.articleHover {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+.hoverInfo h4 {
+    font: var(--font-family-terciary);
+    color:  var(--color-text-second);
+}
+
+.hoverInfo h3 {
+    font: var(--font-family-var);
+    color:  var(--color-text-third);
+}
+
+.hoverImage {
+    min-height: 150px;
+    max-height: 321px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--border-radius-global);
+}
+
+.articleInformation {
+    width: 80%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+.informationDescription {
+    overflow: hidden;
+    margin-bottom: 3rem;
+    font: var(--font-family-terciary);
+    color: var(--color-text)
+}
+
+.childNetwork {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    height: 5rem;
+    align-items: center;
+}
+
+.childNetwork a {
+    font: var(--font-family-terciary);
+    text-decoration: none;
+}
+
+.childNetwork a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    .articleInformation {
+        width: 90%;
+    }
+}
+    

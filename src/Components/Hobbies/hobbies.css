@@ -1,0 +1,11 @@
+.hobbies {
+    background-color: var(--backgroud-principal-hover);
+    height: 836px;
+    border-radius: var(--border-radius-global);
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.hobbies h2 {
+    margin: 0;
+}
