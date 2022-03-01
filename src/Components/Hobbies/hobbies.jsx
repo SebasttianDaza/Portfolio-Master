@@ -16,7 +16,7 @@ const Hobbies = (props) => {
     );
 }
 
-const Card = (props) => {
+export const Card = (props) => {
     return (
       <section className={props.clases}>
         <div className={props.clasesChild}>

@@ -2,6 +2,7 @@ import React from "react";
 import Skills from "../Skills/skills";
 import Blog from "../Blog/blog";
 import Hobbies from "../Hobbies/hobbies";
+import Experience from  "../Experiencies/experience";
 
 class Content extends React.Component {
   constructor(props) {
@@ -58,6 +59,7 @@ class Content extends React.Component {
         </section>
         <section>
           <Blog></Blog>
+          <Experience></Experience>
         </section>
       </main>
     );
