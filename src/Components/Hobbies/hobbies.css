@@ -9,3 +9,42 @@
 .hobbies h2 {
     margin: 0;
 }
+
+.childSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#title {
+    font: var(--font-family-secondary);
+    color: var(--color-text-third);
+    text-align: start;
+    margin: 1rem 0;
+}
+.childSection p {
+    font: var(--font-family-terciary);
+    color: var(--color-text);
+    margin: 1rem 0;
+}
+
+.imageChild {
+    height: 139px;
+    overflow: hidden;
+    width: 90%;
+    border-radius: var(--border-radius-global);
+}
+
+@media screen and (max-width: 900px) {
+    .imageChild {
+        width: 100%;
+    }
+
+    .childSection p {
+        margin: .7rem 0;
+    }
+}
+    

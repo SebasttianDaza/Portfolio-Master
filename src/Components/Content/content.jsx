@@ -34,20 +34,21 @@ class Content extends React.Component {
       const hobbies = [
         {
           name: "Gaming",
-          image: "https://i.imgur.com/qQYXQZu.png",
-          description: "I love playing games, especially with my friends"
+          image:
+            "https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/prueba.jpg?alt=media&token=cbf6a8d1-ec89-4f9b-88ca-e2d6026f5305",
+          description: "I love playing games, especially with my friends",
         },
         {
           name: "Gym and Fitness",
-          image: "https://i.imgur.com/qQYXQZu.png",
-          description: "I love playing games, especially with my friends"
-        }, 
+          image:"https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/prueba.jpg?alt=media&token=cbf6a8d1-ec89-4f9b-88ca-e2d6026f5305",
+          description: "I love playing games, especially with my friends",
+        },
         {
           name: "Football",
-          image: "https://i.imgur.com/qQYXQZu.png",
-          description: "I love playing games, especially with my friends"
-        }
-      ]
+          image:"https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/prueba.jpg?alt=media&token=cbf6a8d1-ec89-4f9b-88ca-e2d6026f5305",
+          description: "I love playing games, especially with my friends",
+        },
+      ];
 
     return (
       <main style={style}>
