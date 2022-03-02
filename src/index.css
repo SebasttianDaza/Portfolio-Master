@@ -14,6 +14,7 @@
   --font-family-secondary: normal 500 18px/22px var(--font-family-principal);
   --font-family-secondarys: normal 500 12px/24px var(--font-family-principal);
   --font-family-terciary: normal 500 16px/20px var(--font-family-principal);
+  --font-family-terciarys: normal 500 14px/17px var(--font-family-principal);
 }
 
 html, body {

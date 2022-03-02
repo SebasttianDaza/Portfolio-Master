@@ -51,6 +51,21 @@ class Content extends React.Component {
         },
       ];
 
+      const experience = [
+        {
+          data: "Feb 2017 - Current",
+          title: "Full Stack Developer",
+          image:"https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/7422528_adidas_sport_sports_exercise_icon.svg?alt=media&token=31fce1d1-661e-48fc-be9c-787bdd05a507",
+          description:"I am a full stack developer, I have experience in React, Javascript, Node, Firebase, TypeScript, Git, MySQL, Docker, HTML, CSS, and more.",
+        },
+        {
+          data: "Feb 2017 - Current",
+          title: "Full Stack Developer",
+          image:"https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/7422528_adidas_sport_sports_exercise_icon.svg?alt=media&token=31fce1d1-661e-48fc-be9c-787bdd05a507",
+          description:"I am a full stack developer, I have experience in React, Javascript, Node, Firebase, TypeScript, Git, MySQL, Docker, HTML, CSS, and more.",
+        },
+      ];
+
     return (
       <main style={style}>
         <section>
@@ -59,7 +74,7 @@ class Content extends React.Component {
         </section>
         <section>
           <Blog></Blog>
-          <Experience></Experience>
+          <Experience experience={experience}></Experience>
         </section>
       </main>
     );

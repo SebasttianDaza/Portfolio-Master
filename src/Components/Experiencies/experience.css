@@ -1,0 +1,45 @@
+.Experience {
+    height: 482px;
+    background-color: var(--backgroud-principal-hover);
+    border-radius: var(--border-radius-global);
+    padding: 1rem;
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.experienceChild {
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    height: 50%;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.experienceInfo {
+    display:flex;
+    flex-direction: column;
+
+}
+
+.title {
+    order: 2;
+    font: var(--font-family-terciary);
+    color: var(--color-text-third)
+}
+
+.titleSecond {
+    font: var(--font-family-terciarys);
+    color: var(--color-text);
+    order: -1;
+}
+
+.description {
+    font: var(--font-family-terciary);
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 900px){
+    .Experience {
+        height: auto;
+    }
+}

@@ -22,8 +22,11 @@ export const Card = (props) => {
         <div className={props.clasesChild}>
           <img src={props.image} alt={props.name}></img>
         </div>
-        <h4 id={props.classText}>{props.name}</h4>
-        <p>{props.description}</p>
+        <div className={props.clasesInformation}>
+          <h4 id={props.classText}>{props.name}</h4>
+          <p className={props.classTextSecond}>{props.description}</p>
+          {props.otherElement}
+        </div>
       </section>
     );
 }
