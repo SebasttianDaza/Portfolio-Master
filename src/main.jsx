@@ -12,6 +12,7 @@ import {
 //Import the components we will need
 import Profile from './Components/Profile/profile';
 import Content from './Components/Content/content';
+import Projects from './Components/Projects/projects';
 
 
 
@@ -28,6 +29,7 @@ class Main extends React.Component {
       <React.StrictMode>
         <Profile></Profile>
         <Content></Content>
+        <Projects></Projects>
       </React.StrictMode>
     );
   }

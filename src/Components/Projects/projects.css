@@ -1,0 +1,46 @@
+.styleProjects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    width : 100%;
+    height : auto;
+}
+
+
+.cardStyle {
+    background-color: var(--backgroud-principal-hover);
+    border-radius: var(--border-radius-global);
+    padding: 1rem;
+}
+
+.cardStyle h2 {
+    margin: 1rem 0;
+    font: var(--font-family-secondary);
+}
+
+.cardStyle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    grid-gap: .5rem;
+    text-align: center;
+}
+
+.cardStyle ul li {
+    border: 1px solid var(--color-text-second);
+    border-radius: var(--border-radius-global)
+}
+
+.cardStyle ul li:hover {
+    background-color: var(--color-backgroud);
+    cursor: pointer;
+    color: var(--color-text-second);
+}
+
+.cardStyle ul li a {
+    text-decoration: none;
+    font: var(--font-family-secondarys);
+}

@@ -17,6 +17,7 @@ class Content extends React.Component {
         gridTemplateColumns : "repeat(auto-fit, minmax(300px, 1fr))",
         margin: "2rem 0",
         gridGap: "2rem",
+        
       }
 
       const skills = [
