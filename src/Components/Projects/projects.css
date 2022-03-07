@@ -44,3 +44,100 @@
     text-decoration: none;
     font: var(--font-family-secondarys);
 }
+
+.cardProjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+
+.projectCard {
+    background-color: var(--backgroud-principal-hover);
+    border-radius: var(--border-radius-global);
+    padding: 1rem;
+    height: 568px;
+}
+
+.cardChild {
+    border-radius: var(--border-radius-global);
+    min-height: 217px;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    height: var(--cal-height-Projects);
+}
+
+#titleCard {
+    font: var(--font-family-var);
+    color: var(--color-text-third);
+    order: 0;
+    margin: 0;
+    height: 40px
+}
+
+.tagsCard {
+    order: -1;
+    font: var(--font-family-terciary);
+    color: var(--color-heading);
+    height: 20px;
+}
+
+.otherElementCard {
+    display: flex;
+    flex-direction: column;
+    height: calc(var(--cal-height-Projects) - 90px);
+    overflow: hidden;
+}
+
+.otherElementCard p {
+    font: var(--font-family-terciary);
+    color: var(--color-text);
+    height: 60%;
+}
+
+.contenBtn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    height: 30%;
+    justify-items: center;
+    align-items: center;
+}
+
+.contenBtn button {
+    width: 135px;
+    height: 46px;
+    border-radius: var(--border-radius-global);
+    border: none;
+    background-color: var(--color-backgroud);
+    font: var(--font-family-secondary);
+    color: var(--color-text-second);
+}
+
+.Pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Pagination button {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--border-radius-global);
+    border: 1px solid var(--color-text-second);
+    font: var(--font-family-secondary);
+    margin-left: 1rem;
+}
+
+.Pagination button:hover {
+    background-color: var(--color-backgroud);
+    cursor: pointer;
+    color: var(--color-text-second);
+}
+
+@media screen and (max-width: 900px){
+    .contenBtn button {
+        width: 100px;
+    }
+}

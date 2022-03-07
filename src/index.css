@@ -15,6 +15,7 @@
   --font-family-secondarys: normal 500 12px/24px var(--font-family-principal);
   --font-family-terciary: normal 500 16px/20px var(--font-family-principal);
   --font-family-terciarys: normal 500 14px/17px var(--font-family-principal);
+  --cal-height-Projects: calc(568px - 217px);
 }
 
 html, body {
