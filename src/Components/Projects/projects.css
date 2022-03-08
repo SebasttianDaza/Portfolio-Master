@@ -47,7 +47,7 @@
 
 .cardProjects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
 }
 
@@ -113,6 +113,11 @@
     border: none;
     background-color: var(--color-backgroud);
     font: var(--font-family-secondary);
+    
+}
+
+.contenBtn button a {
+    text-decoration: none;
     color: var(--color-text-second);
 }
 
@@ -136,8 +141,25 @@
     color: var(--color-text-second);
 }
 
+.footerTitle {
+    text-align: center;
+    font: var(--font-family-terciarys);
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 1122px) {
+    .cardProjects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 @media screen and (max-width: 900px){
     .contenBtn button {
         width: 100px;
+    }
+
+    .cardProjects {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }

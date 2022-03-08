@@ -21,29 +21,27 @@ class Projects extends React.Component {
     return { hasError: true };
   }
 
+  
+
   getProps() {
     this.setState({
-      elements: this.props.dataProjects.slice(this.state.page, this.state.page + 3),
+      elements: this.props.dataProjects
     });
   }
 
   nextPage () {
-    if (this.state.page < this.props.dataProjects.length) {
+    if (this.state.page < this.state.elements.length - 3) {
       this.setState({
-        page:  this.state.page + 3
+        page: this.state.page + 3
       });
-      this.getProps();
-    } else {
-      alert("No more projects");
     }
   }
 
   prevPage() {
-    if (this.state.page > 1) {
+    if (this.state.page > 0) {
       this.setState({
         page: this.state.page - 3
       });
-      this.getProps();
     } else {
       alert("No more projects");
     }
@@ -57,34 +55,10 @@ class Projects extends React.Component {
   render () {
     console.log(this.state.elements);
     console.log(this.state.page)
-    const element = this.state.elements.map((element, index) => {
-      return (
-        <Card
-          key={index}
-          clases="projectCard"
-          clasesChild="cardChild"
-          image={element.image}
-          name={element.name}
-          clasesInformation="cardText"
-          description={element.tags}
-          classText="titleCard"
-          classTextSecond="tagsCard"
-          otherElement={
-            <div className="otherElementCard">
-              <p>{element.description}</p>
-              <div className="contenBtn">
-                <button>
-                  <a href={element.demo}>Demo</a>
-                </button>
-                <button>
-                  <a href={element.repo}>Code</a>
-                </button>
-              </div>
-            </div>
-          }
-        ></Card>
-      );
-    });
+
+    const filteredProjects = () => {
+      return this.state.elements.slice(this.state.page, this.state.page + 3)
+    }
 
     if (this.state.hasError) {
       return <h1>Something went wrong.</h1>;
@@ -105,13 +79,42 @@ class Projects extends React.Component {
             </li>
           </ul>
         </section>
-        <section className="cardProjects">{
-          element
-        }</section>
+        <section className="cardProjects">
+          {filteredProjects().map((element, index) => {
+            return (
+              <Card
+                key={index}
+                clases="projectCard"
+                clasesChild="cardChild"
+                image={element.image}
+                name={element.name}
+                clasesInformation="cardText"
+                description={element.tags}
+                classText="titleCard"
+                classTextSecond="tagsCard"
+                otherElement={
+                  <div className="otherElementCard">
+                    <p>{element.description}</p>
+                    <div className="contenBtn">
+                      <button>
+                        <a href={element.demo}>Demo</a>
+                      </button>
+                      <button>
+                        <a href={element.repo}>Code</a>
+                      </button>
+                    </div>
+                  </div>
+                }
+              ></Card>
+            );
+          })}
+        </section>
         <section className="Pagination">
           <button onClick={this.prevPage}></button>
-          <button onClick={this.nextPage} ></button>
+          <button onClick={this.nextPage}></button>
         </section>
+
+        <section className="footerTitle">created by username - devChallenges.io</section>
       </footer>
     );
   }
