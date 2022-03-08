@@ -55,7 +55,7 @@
     background-color: var(--backgroud-principal-hover);
     border-radius: var(--border-radius-global);
     padding: 1rem;
-    height: 568px;
+    height: 545px;
 }
 
 .cardChild {
@@ -91,10 +91,10 @@
     overflow: hidden;
 }
 
-.otherElementCard p {
+.otherElementDes {
     font: var(--font-family-terciary);
     color: var(--color-text);
-    height: 60%;
+    height: 50%;
 }
 
 .contenBtn {

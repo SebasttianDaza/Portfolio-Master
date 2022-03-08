@@ -31,13 +31,23 @@ class Main extends React.Component {
     const Data = [
       {
         image:
-          "https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/challenge.svg?alt=media&token=1d4f8603-0778-4656-a9fb-845bc9f10c21",
-        name: "404 Not Found",
-        tags: "HTML, CSS, JavaScript",
+          "https://firebasestorage.googleapis.com/v0/b/react-portfolio-863d8.appspot.com/o/Data%20Table.png?alt=media&token=42202b84-8317-4f71-a803-45ef7519d3be",
+        name: "Table API",
+        tags: "CSS, JavaScript, Vue, Firebase",
         description:
-          "Create a 404 not found page following the design. The page should be responsive. Don’t look at the existing solution. Fulfill user stories below:",
+          "Website developed with Vue.js and other techonologies, this project is a test where you paint data from API in a table with their differents records.",
         demo: "https://404-not-found-master-three.vercel.app/",
-        repo: "https://github.com/SebasttianDaza/404-Not-Found-Master",
+        repo: "https://vuetest-cf8a7.web.app/",
+      },
+      {
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/react-portfolio-863d8.appspot.com/o/challengesDesignl.svg?alt=media&token=6c4a7992-a8b1-47a7-9055-f743513f42c9",
+        name: "Home Page",
+        tags: "CSS, JavaScript, React",
+        description:
+          "Homepage that has allowed me learning with React, web components, props, render, also CSS Grid and Flex, and all it with architecture of files and folders.",
+        demo: "https://homepage-ashen-eight.vercel.app/",
+        repo: "https://github.com/SebasttianDaza/homepage",
       },
       {
         image:
@@ -45,19 +55,9 @@ class Main extends React.Component {
         name: "404 Not Found",
         tags: "HTML, CSS, JavaScript",
         description:
-          "Create a 404 not found page following the design. The page should be responsive. Don’t look at the existing solution. Fulfill user stories below:",
-        demo: "https://404-not-found-master-three.vercel.app/",
-        repo: "https://github.com/SebasttianDaza/404-Not-Found-Master",
-      },
-      {
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/challenge.svg?alt=media&token=1d4f8603-0778-4656-a9fb-845bc9f10c21",
-        name: "404 Not Found",
-        tags: "HTML, CSS, JavaScript",
-        description:
-          "Create a 404 not found page following the design. The page should be responsive. Don’t look at the existing solution. Fulfill user stories below:",
-        demo: "https://404-not-found-master-three.vercel.app/",
-        repo: "https://github.com/SebasttianDaza/404-Not-Found-Master",
+          "Web application of consumption of an API with JS, searchMovie is a movie search engine based on the information of The MovieDB.",
+        demo: "https://search-movie-alpha.vercel.app/",
+        repo: "https://github.com/SebasttianDaza/searchMovie",
       },
       {
         image:
@@ -115,7 +115,9 @@ class Main extends React.Component {
 
 ReactDOM.render(
   <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-    <Main />
+    <SnackbarProvider maxSnack={2}>
+      <Main />
+    </SnackbarProvider>
   </FirebaseAppProvider>,
   document.getElementById("root")
 );

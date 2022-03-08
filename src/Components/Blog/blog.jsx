@@ -6,7 +6,7 @@ const Blog = (props) => {
         <section className="articleHover">
           <div className="hoverInfo">
             <h4>Blog</h4>
-            <h3>Name of the Article</h3>
+            <h3>12 Canales de YouTube para aprender programacion.</h3>
           </div>
           <div className="hoverImage">
             <img
@@ -19,17 +19,21 @@ const Blog = (props) => {
         <section className="articleInformation">
           <div className="informationDescription">
             <p>
-              In this article I tell the story about Proin eu justo sit amet
-              lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi.
+              Todos conocemos la gran aplicación que es YouTube, últimamente
+              considerada la universidad de todos, casi cualquier cosa que
+              quieras aprender la encuentras ahí, pero no todo lo que se publica
+              es contenido de calidad.
             </p>
             <p>
-              Donec aliquam est dui, vel vestibulum diam sollicitudin id.
-              Quisque feugiat malesuada molestie.
+              Por eso hoy te traigo los que para mi son canales de muy buen
+              contenido para aprender programacion y desarrollo web en español.
             </p>
           </div>
           <div className="childNetwork">
-            <a href="">dev.to</a>
-            <a href="">Web</a>
+            <a href="https://dev.to/sebasttiandaza/12-canales-de-youtube-para-aprender-programacion-3njo">
+              dev.to
+            </a>
+            <a href="https://emprendeyourlifestyle.com/blog/">Web</a>
           </div>
         </section>
       </article>

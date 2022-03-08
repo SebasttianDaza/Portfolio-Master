@@ -41,7 +41,7 @@
 
 .informationDescription {
     overflow: hidden;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font: var(--font-family-terciary);
     color: var(--color-text)
 }
@@ -50,7 +50,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-    height: 5rem;
+    height: 3rem;
     align-items: center;
 }
 

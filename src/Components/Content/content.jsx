@@ -30,25 +30,27 @@ class Content extends React.Component {
         "TypeScript",
         "Git",
         "MySQL",
-        "Docker"
+        "Docker",
+        
       ]
 
       const hobbies = [
         {
           name: "Gaming",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/prueba.jpg?alt=media&token=cbf6a8d1-ec89-4f9b-88ca-e2d6026f5305",
+            "https://firebasestorage.googleapis.com/v0/b/react-portfolio-863d8.appspot.com/o/control-game-ps4-4k-2c.jpg?alt=media&token=16eef8ba-d031-4bf3-bde2-47287fc6bd01",
           description: "I love playing games, especially with my friends",
         },
         {
           name: "Gym and Fitness",
-          image:"https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/prueba.jpg?alt=media&token=cbf6a8d1-ec89-4f9b-88ca-e2d6026f5305",
-          description: "I love playing games, especially with my friends",
+          image:
+            "https://firebasestorage.googleapis.com/v0/b/react-portfolio-863d8.appspot.com/o/376086-4k-wallpaper.jpg?alt=media&token=acef17b7-1791-4ec4-8523-493d31caf2ea",
+          description: "I like be taking care of my health and my body ",
         },
         {
-          name: "Football",
-          image:"https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/prueba.jpg?alt=media&token=cbf6a8d1-ec89-4f9b-88ca-e2d6026f5305",
-          description: "I love playing games, especially with my friends",
+          name: "Programming and Reading",
+          image:"https://firebasestorage.googleapis.com/v0/b/react-portfolio-863d8.appspot.com/o/una-taza-de-javascript.png?alt=media&token=fa8363da-9d7d-4bfc-a3d5-104808121488",
+          description: "I like be creating and development projects personal",
         },
       ];
 

@@ -1,6 +1,11 @@
 import React from 'react'
 import "./projects.css";
+import { withSnackbar } from 'notistack';
 import { Card } from "../Hobbies/hobbies";
+
+//Import Icons
+
+import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs";
 
 
 class Projects extends React.Component {
@@ -21,6 +26,16 @@ class Projects extends React.Component {
     return { hasError: true };
   }
 
+  handleConnectionLoss = (message) => {
+    this.key = this.props.enqueueSnackbar(message, {
+      variant: 'warning',
+    })
+  }
+
+  handleBackOnline = () => {
+    this.props.closeSnackbar(this.key);
+  }
+
   
 
   getProps() {
@@ -34,6 +49,8 @@ class Projects extends React.Component {
       this.setState({
         page: this.state.page + 3
       });
+    } else {
+      this.handleConnectionLoss("No more projects");
     }
   }
 
@@ -43,7 +60,7 @@ class Projects extends React.Component {
         page: this.state.page - 3
       });
     } else {
-      alert("No more projects");
+      this.handleConnectionLoss("No more projects to go back");
     }
   }
 
@@ -94,7 +111,7 @@ class Projects extends React.Component {
                 classTextSecond="tagsCard"
                 otherElement={
                   <div className="otherElementCard">
-                    <p>{element.description}</p>
+                    <p className="otherElementDes">{element.description}</p>
                     <div className="contenBtn">
                       <button>
                         <a href={element.demo}>Demo</a>
@@ -110,14 +127,20 @@ class Projects extends React.Component {
           })}
         </section>
         <section className="Pagination">
-          <button onClick={this.prevPage}></button>
-          <button onClick={this.nextPage}></button>
+          <button onClick={this.prevPage}>
+            <BsFillCaretLeftFill />
+          </button>
+          <button onClick={this.nextPage}>
+            <BsFillCaretRightFill />
+          </button>
         </section>
 
-        <section className="footerTitle">created by username - devChallenges.io</section>
+        <section className="footerTitle">
+          created by Sebastian Daza - devChallenges.io
+        </section>
       </footer>
     );
   }
 }
 
-export default Projects;
+export default withSnackbar(Projects);

@@ -1,4 +1,6 @@
 import "./profile.css";
+import { BsEnvelopeFill } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 
 
 const Profile = () => {
@@ -18,23 +20,26 @@ const Profile = () => {
             </div>
             <div className="childChidl">
               <div>
-                <img src="https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/source_icons_phone.svg?alt=media&token=fa315533-d82b-4488-9b28-e150ac1a5a8a"></img>
+                <BsEnvelopeFill />
                 <a href="">jsebastiandaza2002@gmail.com</a>
               </div>
               <div>
-                <img src="https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/source_icons_phone.svg?alt=media&token=fa315533-d82b-4488-9b28-e150ac1a5a8a"></img>
-                <a href="">+57 321 470 0676</a>
+                <FaLinkedin />
+                <a href="https://www.linkedin.com/in/sebasttiandaza/">
+                  Sebastian Daza
+                </a>
               </div>
             </div>
           </section>
           <section className="description">
             <p>
-              Self-motivated developer, who is willing to learn and create
-              outstanding UI applications.
+              Frontend JavaScript Developer trained through different courses
+              and projects, proactive, self-taught and very disciplined person
+              with desire to contribute.
             </p>
             <p>
-              Donec aliquam est dui, vel vestibulum diam sollicitudin id.
-              Quisque feugiat malesuada molestie
+              One of my biggest passions is learning and sharing content, you
+              can find me on different social.
             </p>
           </section>
         </section>
