@@ -61,6 +61,8 @@
 .cardChild {
     border-radius: var(--border-radius-global);
     min-height: 217px;
+    max-height: 230px;
+    overflow: hidden;
 }
 
 .cardText {

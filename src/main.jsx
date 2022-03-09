@@ -51,53 +51,53 @@ class Main extends React.Component {
       },
       {
         image:
-          "https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/challenge.svg?alt=media&token=1d4f8603-0778-4656-a9fb-845bc9f10c21",
-        name: "404 Not Found",
-        tags: "HTML, CSS, JavaScript",
+          "https://firebasestorage.googleapis.com/v0/b/react-portfolio-863d8.appspot.com/o/porfolioPersonal2.png?alt=media&token=bdaedffe-6255-4c1e-a6cf-2a403d1702f7",
+        name: "YLS Emprendimientos",
+        tags: "CSS, JavaScript, JQuery, Wordpress",
         description:
-          "Web application of consumption of an API with JS, searchMovie is a movie search engine based on the information of The MovieDB.",
-        demo: "https://search-movie-alpha.vercel.app/",
-        repo: "https://github.com/SebasttianDaza/searchMovie",
+          "Portofolio personal developed with Wordpress, JQuery, and other technologies, this project is a test where you paint data from API in a table with their differents records.",
+        demo: "https://emprendeyourlifestyle.com/",
+        repo: "https://emprendeyourlifestyle.com/",
       },
       {
         image:
-          "https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/challenge.svg?alt=media&token=1d4f8603-0778-4656-a9fb-845bc9f10c21",
-        name: "404 Not Found",
-        tags: "HTML, CSS, JavaScript",
+          "https://firebasestorage.googleapis.com/v0/b/react-portfolio-863d8.appspot.com/o/m2yGallery.svg?alt=media&token=22882587-5ac6-46a8-8bc4-f8f9f2987578",
+        name: "My Gallery",
+        tags: "HTML, CSS",
         description:
-          "Create a 404 not found page following the design. The page should be responsive. Don’t look at the existing solution. Fulfill user stories below:",
-        demo: "https://404-not-found-master-three.vercel.app/",
-        repo: "https://github.com/SebasttianDaza/404-Not-Found-Master",
+          "Website with only CSS, I could to learn much about CSS Grid and to improve my skills.I learned how to use CSS Grid and to use it in my projects.",
+        demo: "https://mygallery-silk.vercel.app/",
+        repo: "https://gitlab.com/SebasttianDaza/mygallery",
       },
       {
         image:
-          "https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/challenge.svg?alt=media&token=1d4f8603-0778-4656-a9fb-845bc9f10c21",
-        name: "Portfolio Page",
-        tags: "HTML, CSS, JavaScript",
+          "https://firebasestorage.googleapis.com/v0/b/react-portfolio-863d8.appspot.com/o/c2hallengesDesigns.svg?alt=media&token=96294984-1bb8-4a41-9d94-80e5bf4029ee",
+        name: "Checkout Page",
+        tags: "HTML, CSS",
         description:
-          "Create a 404 not found page following the design. The page should be responsive. Don’t look at the existing solution. Fulfill user stories below:",
-        demo: "https://404-not-found-master-three.vercel.app/",
-        repo: "https://github.com/SebasttianDaza/404-Not-Found-Master",
+          "This project is a simple design with a form and shopping car. I allow me to learn more about design web responsive, handling of forms and semantic tags.",
+        demo: "https://pagecarmaster.vercel.app/",
+        repo: "https://gitlab.com/SebasttianDaza/pagecarmaster",
       },
       {
         image:
-          "https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/challenge.svg?alt=media&token=1d4f8603-0778-4656-a9fb-845bc9f10c21",
-        name: "Portfolio Page",
+          "https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/imageGitHub1.jpg?alt=media&token=82e83aa2-fe3a-468b-9d0f-3ae368d4a83d",
+        name: "Github search",
         tags: "HTML, CSS, JavaScript",
         description:
-          "Create a 404 not found page following the design. The page should be responsive. Don’t look at the existing solution. Fulfill user stories below:",
-        demo: "https://404-not-found-master-three.vercel.app/",
-        repo: "https://github.com/SebasttianDaza/404-Not-Found-Master",
+          "This project is a simple search engine with the API of GitHub. Its got a simple UI all responsive and it's easy to use. I allow me to learn more about use of a API, organizing the data and I can use it in my projects.",
+        demo: "https://gitsearch-orpin.vercel.app/",
+        repo: "https://github.com/SebasttianDaza/gitsearch",
       },
       {
         image:
-          "https://firebasestorage.googleapis.com/v0/b/emprendeyourlifestyle.appspot.com/o/challenge.svg?alt=media&token=1d4f8603-0778-4656-a9fb-845bc9f10c21",
-        name: "Portfolio Page",
-        tags: "HTML, CSS, JavaScript",
+          "https://emprendeyourlifestyle.com/wp-content/uploads/2021/09/musicMovie.png",
+        name: "Music Player",
+        tags: "CSS, JavaScript",
         description:
-          "Create a 404 not found page following the design. The page should be responsive. Don’t look at the existing solution. Fulfill user stories below:",
-        demo: "https://404-not-found-master-three.vercel.app/",
-        repo: "https://github.com/SebasttianDaza/404-Not-Found-Master",
+          "Web music player is a project that I allow me to learn much from the design as reuse of code, also using design patterns, I’ve a small project with functional programming, and surely design web responsive. ",
+        demo: "https://music-player-indol-six.vercel.app/",
+        repo: "https://github.com/SebasttianDaza/musicPlayer/",
       },
     ];
 

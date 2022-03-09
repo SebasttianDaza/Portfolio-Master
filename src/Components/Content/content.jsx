@@ -23,7 +23,7 @@ class Content extends React.Component {
       const skills = [
         "React",
         "Javascript",
-        "HTML",
+        "Redux",
         "CSS",
         "Node",
         "Firebase",

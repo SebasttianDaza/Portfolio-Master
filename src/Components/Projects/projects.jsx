@@ -86,13 +86,13 @@ class Projects extends React.Component {
           <h2>Projects</h2>
           <ul>
             <li>
-              <a href="">Vue</a>
+              <a href="">React</a>
             </li>
             <li>
-              <a href="">Vue</a>
+              <a href="">JavaScript Vanilla</a>
             </li>
             <li>
-              <a href="">Vue</a>
+              <a href="">Vue</a                           >
             </li>
           </ul>
         </section>
