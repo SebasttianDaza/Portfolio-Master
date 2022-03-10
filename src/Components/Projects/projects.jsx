@@ -14,12 +14,15 @@ class Projects extends React.Component {
     this.state = {
       elements: [],
       page: 0,
-      hasError: false
+      hasError: false,
+      typeFilter: "",
+      filter: "",
     };
     this.getProps = this.getProps.bind(this);
     this.nextPage = this.nextPage.bind(this);
     this.prevPage = this.prevPage.bind(this);
-    
+    this.changeFilter = this.changeFilter.bind(this);
+    this.setStateFunction = this.setStateFunction.bind(this);
   }
 
   static getDerivedStateFromError(error) {
@@ -28,26 +31,57 @@ class Projects extends React.Component {
 
   handleConnectionLoss = (message) => {
     this.key = this.props.enqueueSnackbar(message, {
-      variant: 'warning',
-    })
-  }
+      variant: "warning",
+    });
+  };
 
   handleBackOnline = () => {
     this.props.closeSnackbar(this.key);
-  }
-
-  
+  };
 
   getProps() {
+    if (this.state.filter === "") {
+      this.setState({
+        elements: this.props.dataProjects,
+      });
+    }
+    if (this.state.filter === "React") {
+      this.setStateFunction(this.state.filter);
+    }
+    if (this.state.filter === "JavaScript") {
+      this.setStateFunction(this.state.filter);
+    }
+    if (this.state.filter === "Vue") {
+      this.setStateFunction(this.state.filter);
+    }
+  }
+
+  setStateFunction(Tag) {
     this.setState({
-      elements: this.props.dataProjects
+      elements: this.props.dataProjects.filter((project) =>
+        project.tags.includes(Tag)
+      ),
     });
   }
 
-  nextPage () {
+
+  changeFilter = (filter) => {
+    this.setState({
+      filter: filter
+    });
+  }
+
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.filter !== this.state.filter) {
+      this.getProps();
+    }
+  }
+
+  nextPage() {
     if (this.state.page < this.state.elements.length - 3) {
       this.setState({
-        page: this.state.page + 3
+        page: this.state.page + 3,
       });
     } else {
       this.handleConnectionLoss("No more projects");
@@ -57,25 +91,24 @@ class Projects extends React.Component {
   prevPage() {
     if (this.state.page > 0) {
       this.setState({
-        page: this.state.page - 3
+        page: this.state.page - 3,
       });
     } else {
       this.handleConnectionLoss("No more projects to go back");
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.getProps();
   }
 
-
-  render () {
+  render() {
     console.log(this.state.elements);
-    console.log(this.state.page)
+    console.log(this.state.page);
 
     const filteredProjects = () => {
-      return this.state.elements.slice(this.state.page, this.state.page + 3)
-    }
+      return this.state.elements.slice(this.state.page, this.state.page + 3);
+    };
 
     if (this.state.hasError) {
       return <h1>Something went wrong.</h1>;
@@ -85,14 +118,17 @@ class Projects extends React.Component {
         <section className="cardStyle">
           <h2>Projects</h2>
           <ul>
-            <li>
-              <a href="">React</a>
+            <li onClick={() => this.changeFilter("React")}>
+              <a>React</a>
             </li>
-            <li>
-              <a href="">JavaScript Vanilla</a>
+            <li onClick={() => this.changeFilter("JavaScript")}>
+              <a>JavaScript</a>
             </li>
-            <li>
-              <a href="">Vue</a                           >
+            <li onClick={() => this.changeFilter("Vue")}>
+              <a>Vue</a>
+            </li>
+            <li onClick={() => this.changeFilter("")}>
+              <a>All</a>
             </li>
           </ul>
         </section>
